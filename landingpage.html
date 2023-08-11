@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Landing Page</title>
+ <style>
+    body {
+  font-family: sans-serif;
+  background-color: #fff;
+}
+.header { grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.img { grid-area: img; }
+.contain { grid-area: contain; }
+.other { grid-area:other; }
+
+.jayesh{
+    display: grid;
+  grid-template-areas:
+    'img img contain'
+    'img img contain'
+    'other other other';
+  gap: 20px;
+  padding: 10px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'menu main main main right'
+    'menu footer footer footer footer';
+  gap: 20px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.contain{
+    text-align: center;
+    font-size: 2em;
+   
+}
+h1 {
+  font-size: 2em;
+}
+
+nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+.menu{
+    padding: 10px;
+   
+}
+.menu a{
+    padding:10px;
+    margin: 30px;
+   
+}
+.main{
+    background-color: #eee;
+}
+section {
+  
+  text-align: center;
+}
+.h1{
+text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+img {
+  justify-content: center;
+  margin: 10px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 80px;
+text-align: center;
+
+}
+
+ </style>
+</head>
+<body>
+    <div class="grid-container">
+  <header class="header">
+    <h1> LANDING PAGE (for my blog site)</h1>
+    <nav>
+      <a href="landingpage.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <div class="menu">
+   <h2>Menu</h2> <br>
+     <a href="landingpage.html">Home</a><br><br>
+      <a href="#">About</a><br><br>
+      <a href="#">Contact</a>
+    </ul>
+
+  </div>
+  <main class="main">
+    <section>
+        <h1 class name="h1">WALCOOM TO MY FRIST SITE</h1>
+      <h2>Hello visitor this my  blog site </h2>
+    </section><br>
+    <div class="jayesh">
+      <img class="img" src="work-ga0fefd0b6_640.png" alt="Image">
+      <div class="contain">  
+     <h2>about</h2>
+     <p>
+        I'm a student study at gec collge gandhinagr and write on my web devlopment. I've been writing for a while now, but this is my first blog. I'm excited about it because it allows me to share my opinions and experiences with the world. I hope you enjoy reading my blog as much as I enjoy writing it.
+     </p>
+     <h2> collge experiences </h2>
+     <p>
+      College is a time of great opportunity and growth. It is a time to learn new things, meet new people, and figure out what you want to do with your life.involved in extracurricular activities, and a positive force in the community.
+     </p>
+
+      </div>
+      <div class="other"></div>
+    </div>
+    
+  </main>
+  <footer class="footer">
+    <p>Hi, I Am  kikani jayesh This Is My Landing Page</p>
+    <p>@kikani_jayesh</p>
+  </footer>
+</div>
+</body>
+</html>
